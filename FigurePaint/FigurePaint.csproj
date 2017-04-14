@@ -54,6 +54,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Circle.cs" />
+    <Compile Include="CircleDrawer.cs" />
+    <Compile Include="Drawer.cs" />
+    <Compile Include="Ellipse.cs" />
+    <Compile Include="EllipseDrawer.cs" />
+    <Compile Include="LineDrawer.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="RectangleDrawer.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="Square.cs" />
+    <Compile Include="SquareDrawer.cs" />
+    <Compile Include="Triangle.cs" />
+    <Compile Include="TriangleDrawer.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -1,12 +1,48 @@
 ﻿<Window x:Class="FigurePaint.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FigurePaint"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="503.525" Width="720">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="172" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Click="Button_Click_Line"
+                    Margin="5,20,5,5"  
+                    Width="100" 
+                    Content="линия"/>
+            <Button Click="Button_Click_Triangle"
+                    Margin="5,5,5,5"  
+                    Width="100" 
+                    Content="треугольник"/>
+            <Button Click="Button_Click_Rectangle"
+                    Margin="5,5,5,5"  
+                    Width="100" 
+                    Content="прямоугольник"/>
+            <Button Click="Button_Click_Square"
+                    Margin="5,5,5,5"  
+                    Width="100" 
+                    Content="квадрат"/>
+            <Button Click="Button_Click_Ellipse"
+                    Margin="5,5,5,5"  
+                    Width="100" 
+                    Content="эллипс"/>
+            <Button Click="Button_Click_Circle"
+                    Margin="5,5,5,5"  
+                    Width="100" 
+                    Content="круг"/>
+            <Button Click="Button_Click"
+                    Margin="5,100,5,5"
+                    Width="100" 
+                    Content="отчистить"/>
+
+        </StackPanel>
+        <Canvas
+                Background="Azure"
+                MouseLeftButtonDown="Canvas_MouseLeftButtonDown"
+                MouseMove="Canvas_MouseMove"
+                MouseLeftButtonUp="canvas_MouseLeftButtonUp"
+                Name="canvas" Grid.Column="1"/>
     </Grid>
 </Window>

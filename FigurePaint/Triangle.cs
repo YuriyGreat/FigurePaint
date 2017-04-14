@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace FigurePaint
 {
-    class Line : Shape
+    class Triangle : Shape
     {
         Point secondPoint;
-
-        public Line(Point firstPoint, Point secondPoint) : base(firstPoint)
+        Point thirdPoint;
+        public Triangle(Point firstPoint, Point secondPoint, Point thirdPoint) : base(firstPoint)
         {
             this.secondPoint = secondPoint;
+            this.thirdPoint = thirdPoint;
         }
         public void setSecondPoint(Point secondPoint)
         {
@@ -21,6 +22,14 @@ namespace FigurePaint
         public Point GetSecondPoint()
         {
             return secondPoint;
+        }
+        public void setThirdPoint(Point thirdPoint)
+        {
+            this.thirdPoint = thirdPoint;
+        }
+        public Point GetThirdPoint()
+        {
+            return thirdPoint;
         }
     }
 }

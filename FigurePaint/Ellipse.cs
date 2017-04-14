@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FigurePaint
 {
-    class Line : Shape
+    class Ellipse:Shape
     {
         Point secondPoint;
 
-        public Line(Point firstPoint, Point secondPoint) : base(firstPoint)
+        public Ellipse(Point firstPoint, Point secondPoint) : base(firstPoint)
         {
             this.secondPoint = secondPoint;
         }
